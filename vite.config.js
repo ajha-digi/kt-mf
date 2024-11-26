@@ -8,7 +8,9 @@ export default defineConfig({
     federation({
       name: "demo_remote_app",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        demo_host_app :"http://localhost:5050/assets/remoteEntry.js"
+      },
       exposes: {
         "./demoApp" : "./src/App.jsx",
         "./button" : "./src/Button.jsx"
