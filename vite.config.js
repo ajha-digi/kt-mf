@@ -15,7 +15,7 @@ export default defineConfig({
         "./demoApp" : "./src/App.jsx",
         "./button" : "./src/Button.jsx"
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom", "react-redux"],
     }),
   ],
 
